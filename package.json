@@ -1,0 +1,27 @@
+{
+	"name": "juipter-toys-automation",
+	"version": "1.0.0",
+	"description": "Jupiter Toys E2E Test Automation",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx playwright test",
+		"biome": "npx @biomejs/biome check --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dizhangai-star/juipter-toys-automation.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/dizhangai-star/juipter-toys-automation/issues"
+	},
+	"homepage": "https://github.com/dizhangai-star/juipter-toys-automation#readme",
+	"devDependencies": {
+		"@biomejs/biome": "2.5.2",
+		"@playwright/test": "^1.61.1",
+		"@types/node": "^26.1.0"
+	}
+}
