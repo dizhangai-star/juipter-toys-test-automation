@@ -1,4 +1,4 @@
-# juipter-toys-automation
+# juipter-toys-test-automation
 
 End-to-end test automation for the [Jupiter Toys](http://jupiter.cloud.planittesting.com) demo site, built with [Playwright](https://playwright.dev/) and TypeScript using the Page Object Model.
 
