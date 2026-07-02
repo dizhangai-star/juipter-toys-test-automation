@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 import { expect, test } from "@playwright/test";
 
 import { ContactPage } from "../pages/contactPage";
-import { HomePage } from "../pages/HomePage";
+import { HomePage } from "../pages/homePage";
 
 let contactPage: ContactPage;
 let homePage: HomePage;
@@ -38,8 +38,10 @@ test("Test case 1", async ({ page }) => {
     await expect(contactPage.forenameRequiredErrorText).not.toBeVisible();
     await expect(contactPage.emailRequiredErrorText).not.toBeVisible();
     await expect(contactPage.messageRequiredErrorText).not.toBeVisible();
-
     await expect(contactPage.sendingFeedbackModal).toBeVisible();
+    await expect(
+      contactPage.sendingFeedbackModal.getByText("Sending Feedback"),
+    ).toBeVisible();
     await contactPage.sendingFeedbackModal.waitFor({
       state: "hidden",
       timeout: 15000,
